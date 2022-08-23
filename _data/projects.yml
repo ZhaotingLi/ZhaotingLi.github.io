@@ -1,0 +1,68 @@
+-
+  name: 'Haptic data processing in Human Robot Collaborative Carrying Task'
+  description: >
+    
+  image: /img/rsl_HRCC_overview.png
+  abstract: >
+    *Ongoing*, semester project in Robotic System Lab (RSL), ETHz
+  url:  research_rsl_human_robot_HRCC
+-
+  name: 'Learning Muti-Robot Exploration Strategy with Adaptive-QMIX algorithm'
+  description: >
+    For cooperative muti-agent reinforcement learning problems, centralized training and decentralized execution algorithms are 
+    proposed to utilize the global information during training and to extract margnial policies for execution. In this project,
+    we want to find out and imporve the performance of such algorithm in a more realistic task: the multi-robot explorations where 
+    the robots work as a term to explore an unknown map at minimum cost.
+  image: /img/muti-expo.png
+  abstract: >
+    *Ongoing*, based on the robot exploration project 
+  url: research_muti_robot_exploratiion
+-
+  name: 'Multi-Task Learning for Semantics and Depth'
+  description: >
+    In this project, I trained a neural nework based on three types of muti-task learning framework. Besides comparing the effects of different hyperparameters
+    and structures, I proposed an adaptive weight tuning method which can dynamically adjust the weight of each task's loss during train.
+  image: /img/predictions_aspp.png
+  abstract: >
+    Course project of Deep learning for autonomous driving
+  url: https://hitleo.github.io/research/
+-
+  name: 'Learning Robot Exploration Strategy with Deep Reinforcement Learning'
+  description: >
+    Being able to explore unknown environments is a requirement for fully autonomous robots.
+    Many learning-based methods have been proposed to learn an exploration strategy. 
+    In the frontier-based exploration, learning algorithms tend to learn the optimal or near-optimal frontier to explore. 
+    Most of these methods represent the environments as fixed size images and take these as inputs to neural networks. 
+    However, the size of environments is usually unknown, which makes these methods fail to generalize to real world scenarios.
+    To address this issue, we present a novel state representation method based on 4D point-clouds-like information, including the locations, frontier, and distance information.
+    We also design a neural network that can process these 4D point-clouds-like information and generate the estimated value for each frontier.
+    Then this neural network is trained using the typical reinforcement learning framework.  
+  image: /img/MDP_framework.png
+  abstract: >
+    Research work at SUSTech, published at RA-L.
+  url: https://hitleo.github.io/research/
+
+-
+  name: 'Efficient Heuristic Generation for Robot Path Planning'
+  description: >
+    Robot path planning is difficult to solve due to the contradiction between the optimality of results and the complexity of algorithms, even in 2D environments. 
+    To find an optimal path, the algorithm needs to search all the state space, which costs many computation resources. 
+    To address this issue, we present a novel recurrent generative model (RGM), which generates efficient heuristic to reduce the search efforts of path planning algorithms. 
+  image: /img/exp_rrtstar.png
+  abstract: >
+    Research work at SUSTech, published at ICRA 2021.
+  url: https://hitleo.github.io/research/
+-
+  name: 'A sampling-based motion planning method for urban autonomous vehicles'
+  description: >
+    Sampling-based motion planning methods are widely adopted in autonomous driving. Typically, sampling can be decoupled into two 
+    layers: a path sampling layer and a speed profile sampling layer. For the path sampling layer, traditional methods tend to 
+    sample with a uniform distribution over the whole feasible space, which might cause either computational inefficiency or 
+    poor performance if the sampling resolution is not set appropriately. To solve this problem, we propose an adaptive path 
+    sampling approach that samples from a time-varying distribution depending on the dynamic environment and potential costs 
+    of the ego vehicle. Such sampling strategy is then combined with a non-conservatively defensive strategy in the speed sampling 
+    layer to generate a set of safe but not overcautious trajectories.
+  image: /img/road_figure.jpg
+  abstract: >
+    Research work at UC Berkeley, published at IFAC 2020.
+  url: https://hitleo.github.io/research/

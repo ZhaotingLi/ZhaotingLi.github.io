@@ -1,0 +1,41 @@
+name: Zhaoting Li
+
+label:  Master student at ETH Zurich
+
+picture: /img/profile-picture.jpg
+
+email: zhaoting_li@outlook.com
+
+phone: 
+
+department: D-MAVT
+
+institution: ETH Zurich
+
+mailing_address: >
+  Switzerland
+
+profiles:
+  - 
+    network: Google Scholar
+    username:
+    url: https://scholar.google.com/citations?user=KAVUl24AAAAJ&hl=en
+  -
+  #   network: LinkedIn
+  #   username:
+  #   url: https://www.linkedin.com/pub/ian-li/1/681/8b0
+  # -
+    network: Github
+    username: lzt-98
+    url: https://github.com/lzt-98
+
+intro:
+  title: Hello!
+  body: >
+    I'm a first year master student at ETH Zurich, majored in Robotics, System and Control (RSC) program.
+    I obtained a Bachelor degree in Automation at Harbin Institute of Technology (HIT), China. 
+
+    I am passinate about the research that makes robots intellgient, safe and easy to use. 
+    For more information, please feel free to check my CV, [Google Scholar](https://scholar.google.com/citations?user=KAVUl24AAAAJ&hl=en) 
+    and this webpage.
+    

@@ -1,0 +1,42 @@
+-
+  type: journal
+  title: Learning Robot Exploration Strategy with 4D Point-Clouds-like Information as Observations
+  authors: Zhaoting Li, T. Li, J. Wang, M. Q.-H. Meng
+  journal: IEEE Robotics and Automation Letters
+  volume: 7
+  issue: 1
+  year: 2022
+  month: Jan
+  pdf: http://127.0.0.1:4000/zhaoting-li/robot-exploration/
+  url: https://ieeexplore.ieee.org/abstract/document/9555230
+-
+  type: conference
+  title: Efficient Heuristic Generation for Robot Path Planning with Recurrent Generative Model
+  authors: Zhaoting Li, J. Wang, M. Q.-H. Meng
+  conference: Proceedings of IEEE International Conference on Robotics and Automation (ICRA)
+  year: 2021
+  pages: 405-414
+  pdf: https://ieeexplore.ieee.org/abstract/document/9561472
+  url: https://ieeexplore.ieee.org/abstract/document/9561472
+-
+  type: conference
+  title: Adaptive sampling-based motion planning with a non-conservatively defensive strategy for autonomous driving
+  authors: Zhaoting Li, Wei Zhan, Liting Sun, Ching-Yao Chan, Masayoshi Tomizuka
+  year: 2020
+  conference: Proceedings of IFAC 2020
+  pages: 15632-15638
+  pdf: http://ianli.com/publications/2010-ianli-chi-stage-based-model.pdf
+  url: http://dl.acm.org/citation.cfm?id=1753326.1753409
+-
+  type: journal
+  title: 	A trajectory planning method for robot scanning system using mask R-CNN for scanning objects with unknown model
+  authors: Yipeng Yang, Zhaoting Li, Xinghu Yu, Zhan Li, Huijun Gao
+  journal: Neurocomputing
+  volume: 404
+  issue: 1
+  year: 2021
+  month: Sep
+  pdf: https://www.sciencedirect.com/science/article/abs/pii/S0925231220306263
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0925231220306263
+-
+

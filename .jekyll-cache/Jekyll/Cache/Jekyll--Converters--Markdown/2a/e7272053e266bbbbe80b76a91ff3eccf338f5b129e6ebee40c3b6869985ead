@@ -1,0 +1,2 @@
+I"Ç<p>Robot path planning is difficult to solve due to the contradiction between the optimality of results and the complexity of algorithms, even in 2D environments.  To find an optimal path, the algorithm needs to search all the state space, which costs many computation resources.  To address this issue, we present a novel recurrent generative model (RGM), which generates efficient heuristic to reduce the search efforts of path planning algorithms.</p>
+:ET

@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.data.personal.name }}</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/albertine/css/default.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Javascript -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body class="intro-screen">
+
+  <!-- ==================== -->
+  <!-- HEADER -->
+  <!-- ==================== -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-9 col-lg-9">
+            <h1>
+                <a href="{{ site.baseurl}}/">
+                {{ site.data.personal.name }}
+                </a>
+              </h1>
+          <h2>
+            {{ site.data.personal.label }}
+          </h2>
+        </div>
+        <div class="col-xs-3 col-lg-3">
+          <img src="{{ site.baseurl }}{{ site.data.personal.picture }}" 
+               class="img-circle"
+               style="margin-top:-6px;width:56px;border:2px solid rgba(255,255,255,0.75)">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== -->
+  <!-- SECTION -->
+  <!-- ==================== -->
+  <body class="intro-screen">
+    {% if site.data.publications.size > 0 %}
+    <div class="container">
+      <div class="row">
+        <section class="col-md-9">
+          <h3>{{page.title}}</h3>
+          
+          {% if page.image %}
+          <p>
+            <img src="{{ site.baseurl }}{{ page.image }}" 
+                 class="img-responsive img-thumbnail"
+                 style="width:200%">
+          </p>
+          {% endif %}
+
+          <p> 
+            <br> 
+                {{content}}
+            <br>
+          </p>
+
+        </section>
+      </div>
+    </div>
+    {% endif %}
+  </body>
+  
+</html>
