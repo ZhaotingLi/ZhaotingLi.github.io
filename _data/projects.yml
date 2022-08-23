@@ -66,3 +66,11 @@
   abstract: >
     Research work at UC Berkeley, published at IFAC 2020.
   url: https://hitleo.github.io/research/
+-
+  name: 'A trajectory planning method for robot scanning sytem for scanning objects with unknown model'
+  description: >
+    
+  image: /img/laser_scanning_system.png
+  abstract: >
+    Research work at HIT, published at Neurocomputing 2020.
+  url: https://hitleo.github.io/research/
