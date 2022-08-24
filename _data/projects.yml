@@ -22,10 +22,10 @@
   description: >
     In this project, I trained a neural nework based on three types of muti-task learning framework. Besides comparing the effects of different hyperparameters
     and structures, I proposed an adaptive weight tuning method which can dynamically adjust the weight of each task's loss during train.
-  image: /img/predictions_aspp.png
+  image: /img/DLAD_overview.png
   abstract: >
     Course project of Deep learning for autonomous driving
-  url: https://hitleo.github.io/research/
+  url: research_DLAD
 -
   name: 'Learning Robot Exploration Strategy with Deep Reinforcement Learning'
   description: >
@@ -40,7 +40,7 @@
   image: /img/MDP_framework.png
   abstract: >
     Research work at SUSTech, published at RA-L.
-  url: https://hitleo.github.io/research/
+  url: research_Robot_exploration
 
 -
   name: 'Efficient Heuristic Generation for Robot Path Planning'
@@ -51,7 +51,7 @@
   image: /img/exp_rrtstar.png
   abstract: >
     Research work at SUSTech, published at ICRA 2021.
-  url: https://hitleo.github.io/research/
+  url: research_gan_heuristic
 -
   name: 'A sampling-based motion planning method for urban autonomous vehicles'
   description: >
@@ -65,7 +65,7 @@
   image: /img/road_figure.jpg
   abstract: >
     Research work at UC Berkeley, published at IFAC 2020.
-  url: https://hitleo.github.io/research/
+  url: research_IFAC
 -
   name: 'A trajectory planning method for robot scanning sytem for scanning objects with unknown model'
   description: >

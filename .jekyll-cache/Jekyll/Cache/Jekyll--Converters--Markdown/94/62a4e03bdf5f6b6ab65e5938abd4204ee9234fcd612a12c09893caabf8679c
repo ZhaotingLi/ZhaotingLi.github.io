@@ -1,0 +1,11 @@
+I"ý<h3 id="deep-learning-for-autonomous-driving-muti-tasking-learning-and-3d-object-detection">Deep Learning for Autonomous Driving: muti-tasking learning and 3D object detection</h3>
+
+<p>3D object detection is crucial for autonomous driving, where the most frequently used 3D sensor are the LiDAR sensors. 
+The typical commonly-used 2-stage framework is composed of two networks: the Region Proposal Network (RPN) and the proposal refining network.
+In this report, we propose several methods to improve the network performance:
+(1) Include the local coordinate and intensity information as features.
+(2) Using Adam as optimizer instead of SGD.
+(3) Adding IoU loss for the regression task.
+(4) Changing the bounding box enlargement strategy for roi pooling step.</p>
+
+:ET
