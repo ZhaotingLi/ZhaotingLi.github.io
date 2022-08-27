@@ -55,13 +55,10 @@
 -
   name: 'A sampling-based motion planning method for urban autonomous vehicles'
   description: >
-    Sampling-based motion planning methods are widely adopted in autonomous driving. Typically, sampling can be decoupled into two 
-    layers: a path sampling layer and a speed profile sampling layer. For the path sampling layer, traditional methods tend to 
-    sample with a uniform distribution over the whole feasible space, which might cause either computational inefficiency or 
-    poor performance if the sampling resolution is not set appropriately. To solve this problem, we propose an adaptive path 
-    sampling approach that samples from a time-varying distribution depending on the dynamic environment and potential costs 
-    of the ego vehicle. Such sampling strategy is then combined with a non-conservatively defensive strategy in the speed sampling 
-    layer to generate a set of safe but not overcautious trajectories.
+    * Designed an automatic and low-cost robot scanning system consisting of a kinect camera, a UR 10 robot and a line laser scanner. Also calibrated the coordinate systems.
+    * Proposed an online correction methods based on follow-up control and scanned data to optimize the pose of the laser scanner. 
+    * Proposed a novel path planning methods for laser scanning based on the least square fitting and online correction. This path planning method has been validated in many use cases under various work conditions.
+
   image: /img/road_figure.jpg
   abstract: >
     Research work at UC Berkeley, published at IFAC 2020.
