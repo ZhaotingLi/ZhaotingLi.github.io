@@ -1,0 +1,6 @@
+I""<ul>
+  <li>Designed an automatic and low-cost robot scanning system consisting of a kinect camera, a UR 10 robot and a line laser scanner. Also calibrated the coordinate systems.</li>
+  <li>Proposed an online correction methods based on follow-up control and scanned data to optimize the pose of the laser scanner.</li>
+  <li>Proposed a novel path planning methods for laser scanning based on the least square fitting and online correction. This path planning method has been validated in many use cases under various work conditions.</li>
+</ul>
+:ET

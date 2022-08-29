@@ -1,0 +1,6 @@
+I"<ul>
+  <li>Proposed a learning-based force filtering method thatutilizes the filtered-and-amplified robot-side forces as the ground truth, to reduce the noise introduced by the trotting action.</li>
+  <li>Designed an efficient transformer-based neural network,collecteddataduring the collaboration between humansand ANYMal with anarm,and trained the networkin the typical supervised learning framework.</li>
+  <li>Testedthe effectivenessof the proposed force filtering method with the admittance control framework.</li>
+</ul>
+:ET

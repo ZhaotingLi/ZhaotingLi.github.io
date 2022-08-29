@@ -1,0 +1,6 @@
+I"<ul>
+  <li>Proposed 4D point-clouds-like information, which consists of 2D points’ location information, and the corresponding 1D frontier and 1D distance information.</li>
+  <li>Designed the corresponding training framework based on the deep Q-Learning method and modified it to adapt to the variable action space.</li>
+  <li>Demonstrated the performance of the proposed method on a wide variety of environments, which the model has not seen before, and includes maps whose size is much larger than maps in the training set.</li>
+</ul>
+:ET

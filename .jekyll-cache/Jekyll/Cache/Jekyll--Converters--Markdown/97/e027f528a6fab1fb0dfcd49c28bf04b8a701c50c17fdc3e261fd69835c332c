@@ -1,0 +1,6 @@
+I"œ<ul>
+  <li>Trained neural neworks based on three types of muti-task learning framework, compared the effects of different hyperparameters and structures.</li>
+  <li>Proposed an adaptive weight tuning method which can dynamically adjust the weight of each taskâ€™s loss during training.</li>
+  <li>Trained the baseline proposal refining network and proposed several methods to improve its performance.</li>
+</ul>
+:ET

@@ -1,0 +1,6 @@
+I"<ul>
+  <li>Designeda novel recurrent generative modelto generate efficientheuristic for robot path planning.</li>
+  <li>Incrementally constructedthe heuristic through the feedback of historical information.</li>
+  <li>Combinedthe generated heuristic with RRT* algorithm to guide the algorithm to find both initial and optimal solutions in a faster and more efficient way.</li>
+</ul>
+:ET

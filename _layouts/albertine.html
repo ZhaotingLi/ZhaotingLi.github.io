@@ -96,7 +96,7 @@ It is threatened by habitat loss.
       <section class="col-md-offset-1 col-md-3">
         <h3>Contact</h3>
         <p>
-          {{ site.data.personal.email | replace:'@',' <small>[at]</small> ' | replace:'.',' <small>[dot]</small> ' }}
+          {{ site.data.personal.email}}
         </p>
         <p>
           {{ site.data.personal.department }}<br>
@@ -129,7 +129,7 @@ It is threatened by habitat loss.
   {% if site.data.publications.size > 0 %}
   <div class="container">
     <div class="row">
-      <section class="col-md-9">
+      <section class="col-md-8">
         <h3>Publications</h3>
 
         {% for publication in site.data.publications %}
@@ -162,6 +162,23 @@ It is threatened by habitat loss.
                 {{ publication.pages }}
             {% endcase %}
           </p>
+        {% endfor %}
+      </section>
+      <section class="col-md-offset-1 col-md-3">
+        <h3>Experiences</h3>
+        {% for experience in site.data.experiences %}
+          <p>
+            <b>
+              {{experience.title}}
+            </b>
+            <br>
+            {{experience.place}}
+            <br>
+            {{experience.time}}
+            
+            
+          </p>
+
         {% endfor %}
       </section>
     </div>

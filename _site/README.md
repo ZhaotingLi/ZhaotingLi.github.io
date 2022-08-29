@@ -32,6 +32,7 @@ It has the following features that make it easier to create an academic personal
 
 * Clone the git repo - `git clone https://github.com/ianli/elbowpatched-boilerplate.git`.
 * Setup and run [Jekyll](http://jekyllrb.com/). https://jekyllrb.com/docs/installation/ubuntu/
+* Run 'jekyll serve'
 * Edit the contents of the [YAML](http://en.wikipedia.org/wiki/YAML) files in the folder `_data`.
   * `personal.yml` - Your personal information
   * `publications.yml` - Bibliography of your publications

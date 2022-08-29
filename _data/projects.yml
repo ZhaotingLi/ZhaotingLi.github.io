@@ -1,6 +1,12 @@
 -
   name: 'Haptic data processing in Human Robot Collaborative Carrying Task'
   description: >
+    * Proposed a learning-based force filtering method that utilizes the filtered-and-amplified robot-side forces as the ground truth, to reduce the noise introduced by the trotting action.
+    
+    * Designed an efficient transformer-based neural network,collected data during the collaboration between humans and ANYMal with an arm, and trained the network in the typical supervised learning framework.
+    
+    * Tested the effectiveness of the proposed force filtering method with the admittance control framework.
+
     
   image: /img/rsl_HRCC_overview.png
   abstract: >
@@ -9,19 +15,26 @@
 -
   name: 'Learning Muti-Robot Exploration Strategy with Adaptive-QMIX algorithm'
   description: >
-    For cooperative muti-agent reinforcement learning problems, centralized training and decentralized execution algorithms are 
-    proposed to utilize the global information during training and to extract margnial policies for execution. In this project,
-    we want to find out and imporve the performance of such algorithm in a more realistic task: the multi-robot explorations where 
-    the robots work as a term to explore an unknown map at minimum cost.
+    * Developed the simulation environment for muti-robot exploration.
+    
+    * Proposed the adaptive-QMIX method which can be adaptive to various total robot number.
+    
+    * Applied the proposed algorithm to muti-robot exploration problem.
+
   image: /img/muti-expo.png
   abstract: >
     *Ongoing*, based on the robot exploration project 
   url: research_muti_robot_exploratiion
 -
-  name: 'Multi-Task Learning for Semantics and Depth'
+  name: 'Deep Learning for Autonomous Driving: muti-tasking learning and 3D object detection'
   description: >
-    In this project, I trained a neural nework based on three types of muti-task learning framework. Besides comparing the effects of different hyperparameters
-    and structures, I proposed an adaptive weight tuning method which can dynamically adjust the weight of each task's loss during train.
+    * Trained neural neworks based on three types of muti-task learning framework, compared the effects of different hyperparameters
+    and structures.
+    
+    * Proposed an adaptive weight tuning method which can dynamically adjust the weight of each task's loss during training.
+
+    * Trained the baseline proposal refining network, and proposed several methods to improve its performance.
+
   image: /img/DLAD_overview.png
   abstract: >
     Course project of Deep learning for autonomous driving
@@ -29,14 +42,13 @@
 -
   name: 'Learning Robot Exploration Strategy with Deep Reinforcement Learning'
   description: >
-    Being able to explore unknown environments is a requirement for fully autonomous robots.
-    Many learning-based methods have been proposed to learn an exploration strategy. 
-    In the frontier-based exploration, learning algorithms tend to learn the optimal or near-optimal frontier to explore. 
-    Most of these methods represent the environments as fixed size images and take these as inputs to neural networks. 
-    However, the size of environments is usually unknown, which makes these methods fail to generalize to real world scenarios.
-    To address this issue, we present a novel state representation method based on 4D point-clouds-like information, including the locations, frontier, and distance information.
-    We also design a neural network that can process these 4D point-clouds-like information and generate the estimated value for each frontier.
-    Then this neural network is trained using the typical reinforcement learning framework.  
+    * Proposed 4D point-clouds-like information, which consists of 2D points’ location information, and the corresponding 1D frontier and 1D distance information.
+    
+    * Designed the corresponding training framework based on the deep Q-Learning method and modified it to adapt to the variable action space.
+    
+    * Demonstrated the performance of the proposed method on a wide variety of environments, which the model has not seen before, and includes maps whose size is much larger than maps in the training set.
+
+
   image: /img/MDP_framework.png
   abstract: >
     Research work at SUSTech, published at RA-L.
@@ -45,9 +57,13 @@
 -
   name: 'Efficient Heuristic Generation for Robot Path Planning'
   description: >
-    Robot path planning is difficult to solve due to the contradiction between the optimality of results and the complexity of algorithms, even in 2D environments. 
-    To find an optimal path, the algorithm needs to search all the state space, which costs many computation resources. 
-    To address this issue, we present a novel recurrent generative model (RGM), which generates efficient heuristic to reduce the search efforts of path planning algorithms. 
+    * Designed a novel recurrent generative model to generate efficient heuristic for robot path planning.
+
+    * Incrementally constructed the heuristic through the feedback of historical information.
+
+    * Combinedthe generated heuristic with RRT* algorithm to guide the algorithm to find both initial and optimal solutions in a faster and more efficient way.
+
+
   image: /img/exp_rrtstar.png
   abstract: >
     Research work at SUSTech, published at ICRA 2021.
@@ -55,9 +71,13 @@
 -
   name: 'A sampling-based motion planning method for urban autonomous vehicles'
   description: >
-    * Designed an automatic and low-cost robot scanning system consisting of a kinect camera, a UR 10 robot and a line laser scanner. Also calibrated the coordinate systems.
-    * Proposed an online correction methods based on follow-up control and scanned data to optimize the pose of the laser scanner. 
-    * Proposed a novel path planning methods for laser scanning based on the least square fitting and online correction. This path planning method has been validated in many use cases under various work conditions.
+    * Applied the discrete elastic-band-based motion planning method(EB planner)to generate piecewise linear collision-free path with dynamic programming.
+    
+    * Employed pure pursuit controller to smooth this path.•Used a spatial and speed sampling methodtogether with acascaded ranking method to optimize the trajectory with many hierarchical features.
+    
+    * Applied a non-conservatively defensive strategy to avoid overreacting to threats with low probability.
+    
+    * Adaptively adjust sampling resolution based on the environment and the objectives of the ego vehicle.
 
   image: /img/road_figure.jpg
   abstract: >
@@ -66,7 +86,13 @@
 -
   name: 'A trajectory planning method for robot scanning sytem for scanning objects with unknown model'
   description: >
+    * Designed an automatic and low-cost robot scanning system consisting of a kinect camera, a UR 10 robot and a line laser scanner. Also calibrated the coordinate systems.
     
+    * Proposed an online correction methods based on follow-up control and scanned data to optimize the pose of the laser scanner. 
+    
+    * Proposed a novel path planning methods for laser scanning based on the least square fitting and online correction. This path planning method has been validated in many use cases under various work conditions.
+
+
   image: /img/laser_scanning_system.png
   abstract: >
     Research work at HIT, published at Neurocomputing 2020.
