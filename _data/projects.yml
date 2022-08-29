@@ -1,5 +1,6 @@
 -
   name: 'Haptic data processing in Human Robot Collaborative Carrying Task'
+  time: 2022.03 - current
   description: >
     * Proposed a learning-based force filtering method that utilizes the filtered-and-amplified robot-side forces as the ground truth, to reduce the noise introduced by the trotting action.
     
@@ -7,13 +8,13 @@
     
     * Tested the effectiveness of the proposed force filtering method with the admittance control framework.
 
-    
   image: /img/rsl_HRCC_overview.png
   abstract: >
-    *Ongoing*, semester project in Robotic System Lab (RSL), ETHz
+    *Ongoing*, semester project in Robotic System Lab (RSL), ETHz [[Report](https://drive.google.com/file/d/169OLYRjhD3g-8cr3lPWS1mzWGUkF9fjj/view?usp=sharing)]
   url:  research_rsl_human_robot_HRCC
 -
   name: 'Learning Muti-Robot Exploration Strategy with Adaptive-QMIX algorithm'
+  time: 2021.10 - current
   description: >
     * Developed the simulation environment for muti-robot exploration.
     
@@ -27,6 +28,7 @@
   url: research_muti_robot_exploratiion
 -
   name: 'Deep Learning for Autonomous Driving: muti-tasking learning and 3D object detection'
+  time: 2022.04-2022.07
   description: >
     * Trained neural neworks based on three types of muti-task learning framework, compared the effects of different hyperparameters
     and structures.
@@ -41,6 +43,7 @@
   url: research_DLAD
 -
   name: 'Learning Robot Exploration Strategy with Deep Reinforcement Learning'
+  time: 2020.10-2021.07
   description: >
     * Proposed 4D point-clouds-like information, which consists of 2D points’ location information, and the corresponding 1D frontier and 1D distance information.
     
@@ -51,11 +54,12 @@
 
   image: /img/MDP_framework.png
   abstract: >
-    Research work at SUSTech, published at RA-L.
+    Research work at SUSTech, published at RA-L [[paper](https://ieeexplore.ieee.org/abstract/document/9555230)].
   url: research_Robot_exploration
 
 -
   name: 'Efficient Heuristic Generation for Robot Path Planning'
+  time: 2020.07-2020.10
   description: >
     * Designed a novel recurrent generative model to generate efficient heuristic for robot path planning.
 
@@ -66,10 +70,11 @@
 
   image: /img/exp_rrtstar.png
   abstract: >
-    Research work at SUSTech, published at ICRA 2021.
+    Research work at SUSTech, published at ICRA 2021 [[paper](https://ieeexplore.ieee.org/abstract/document/9561472)].
   url: research_gan_heuristic
 -
   name: 'A sampling-based motion planning method for urban autonomous vehicles'
+  time: 2019.07-2020.01
   description: >
     * Applied the discrete elastic-band-based motion planning method(EB planner)to generate piecewise linear collision-free path with dynamic programming.
     
@@ -81,10 +86,11 @@
 
   image: /img/road_figure.jpg
   abstract: >
-    Research work at UC Berkeley, published at IFAC 2020.
+    Research work at UC Berkeley, published at IFAC 2020 [[paper](https://www.sciencedirect.com/science/article/pii/S2405896320332237)].
   url: research_IFAC
 -
   name: 'A trajectory planning method for robot scanning sytem for scanning objects with unknown model'
+  time: 2019.02-2019.06
   description: >
     * Designed an automatic and low-cost robot scanning system consisting of a kinect camera, a UR 10 robot and a line laser scanner. Also calibrated the coordinate systems.
     
@@ -95,5 +101,5 @@
 
   image: /img/laser_scanning_system.png
   abstract: >
-    Research work at HIT, published at Neurocomputing 2020.
+    Research work at HIT, published at Neurocomputing 2020 [[paper](https://www.sciencedirect.com/science/article/abs/pii/S0925231220306263)].
   url: https://hitleo.github.io/research/

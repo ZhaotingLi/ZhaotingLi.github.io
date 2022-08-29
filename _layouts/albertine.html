@@ -143,7 +143,7 @@ It is threatened by habitat loss.
               {{ publication.year }}
             </small>
             <br>
-            {{ publication.authors }}
+            {{ publication.authors | replace:'Zhaoting Li', "<b>Zhaoting Li </b>"}}
             <br>
             {% case publication.type %}
               {% when 'conference' %}
@@ -222,6 +222,9 @@ It is threatened by habitat loss.
                 {{ project.name }}
               {% endif %}
             </b>
+            <small>
+              {{ project.time }}
+            </small>
           </p>
           {{ project.abstract | markdownify }}
           {{ project.description | markdownify }}
