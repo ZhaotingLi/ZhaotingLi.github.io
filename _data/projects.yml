@@ -2,11 +2,9 @@
   name: 'Contact Detection for Serial Robot Arm and its Application in Contact-aware Control'
   time: 2022.10 - current
   description: >
-    * Proposed a learning-based force filtering method that utilizes the filtered-and-amplified robot-side forces as the ground truth, to reduce the noise introduced by the trotting action.
-    
-    * Designed an efficient transformer-based neural network,collected data during the collaboration between humans and ANYMal with an arm, and trained the network in the typical supervised learning framework.
-    
-    * Tested the effectiveness of the proposed force filtering method with the admittance control framework.
+    * Implemented a contact detection algorithm that can estimate the contact locations and fores using the data from the joint torque sensors.   
+    * Plan to extend the state-of-art method to the multiple contact case.    
+    * Plan to incorporate the improved contact estimator into the contact-aware control framework.
 
   image: /img/crl_contactdetection.png
   abstract: >
