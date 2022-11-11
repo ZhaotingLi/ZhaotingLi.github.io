@@ -1,6 +1,20 @@
 -
-  name: 'Haptic data processing in Human Robot Collaborative Carrying Task'
-  time: 2022.03 - current
+  name: 'Contact Detection for Serial Robot Arm and its Application in Contact-aware Control'
+  time: 2022.10 - current
+  description: >
+    * Proposed a learning-based force filtering method that utilizes the filtered-and-amplified robot-side forces as the ground truth, to reduce the noise introduced by the trotting action.
+    
+    * Designed an efficient transformer-based neural network,collected data during the collaboration between humans and ANYMal with an arm, and trained the network in the typical supervised learning framework.
+    
+    * Tested the effectiveness of the proposed force filtering method with the admittance control framework.
+
+  image: /img/crl_contactdetection.png
+  abstract: >
+    *Ongoing*, MSc thesis in Computational Robotics Lab (RSL), ETHz 
+  url:  research_rsl_human_robot_HRCC
+-
+  name: 'Learning haptic data processing in Human Robot Collaborative Carrying Task'
+  time: 2022.03 - 2022.08
   description: >
     * Proposed a learning-based force filtering method that utilizes the filtered-and-amplified robot-side forces as the ground truth, to reduce the noise introduced by the trotting action.
     
@@ -10,11 +24,11 @@
 
   image: /img/rsl_HRCC_overview.png
   abstract: >
-    *Ongoing*, semester project in Robotic System Lab (RSL), ETHz [[Report](https://drive.google.com/file/d/169OLYRjhD3g-8cr3lPWS1mzWGUkF9fjj/view?usp=sharing)]
+     semester project in Robotic System Lab (RSL), ETHz [[Report](https://drive.google.com/file/d/169OLYRjhD3g-8cr3lPWS1mzWGUkF9fjj/view?usp=sharing)]
   url:  research_rsl_human_robot_HRCC
 -
   name: 'Learning Muti-Robot Exploration Strategy with Adaptive-QMIX algorithm'
-  time: 2021.10 - current
+  time: 2021.10 - 2022.02
   description: >
     * Developed the simulation environment for muti-robot exploration.
     
@@ -24,7 +38,7 @@
 
   image: /img/muti-expo.png
   abstract: >
-    *Ongoing*, based on the robot exploration project 
+     based on the robot exploration project 
   url: research_muti_robot_exploratiion
 -
   name: 'Deep Learning for Autonomous Driving: muti-tasking learning and 3D object detection'
