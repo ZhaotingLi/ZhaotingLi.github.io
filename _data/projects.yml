@@ -1,15 +1,19 @@
 -
-  name: 'Contact Detection for Serial Robot Arm and its Application in Contact-aware Control'
+  name: 'CARE: Contact Aware and Reactive Estimator for Contact-Rich Motion Planning'
   time: 2022.10 - current
   description: >
     * Implemented a contact detection algorithm that can estimate the contact locations and fores using the data from the joint torque sensors.   
-    * Plan to extend the state-of-art method to the multiple contact case.    
-    * Plan to incorporate the improved contact estimator into the contact-aware control framework.
+    
+    * Extend the contact particle filter method to output multiple possible solutions, plan to generalize the state of art methods to multiple contact cases.    
+    
+    * Implemement a contact-aware control framework for rigid contacts, and generalize this framework for contacts with unknown stiffness, includling both soft and rigid contacts.
 
-  image: /img/crl_contactdetection.png
+    * Plan to propose high-level contact-aware planning in cluttered envrionments to find possible trajectories which may leads to contacts with the environment.
+
+  image: /img/contact-aware-control-demo.png
   abstract: >
-    *Ongoing*, MSc thesis in Computational Robotics Lab (RSL), ETHz 
-  url:  research_rsl_human_robot_HRCC
+    *Ongoing*, MSc thesis in Computational Robotics Lab (CRL), ETHz 
+  url:  research_crl_contact
 -
   name: 'Learning haptic data processing in Human Robot Collaborative Carrying Task'
   time: 2022.03 - 2022.08
