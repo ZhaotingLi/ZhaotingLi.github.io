@@ -1,7 +1,0 @@
-I"Y<ul>
-  <li>Applied the discrete elastic-band-based motion planning method(EB planner)to generate piecewise linear collision-free path with dynamic programming.</li>
-  <li>Employed pure pursuit controller to smooth this path.•Used a spatial and speed sampling methodtogether with acascaded ranking method to optimize the trajectory with many hierarchical features.</li>
-  <li>Applied a non-conservatively defensive strategy to avoidoverreacting to threats with low probability.</li>
-  <li>Adaptively adjust sampling resolution based on the environment and the objectives oftheego vehicle.</li>
-</ul>
-:ET

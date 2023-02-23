@@ -1,2 +1,0 @@
-I"+<p>In this project, I trained a neural nework based on three types of muti-task learning framework. Besides comparing the effects of different hyperparameters and structures, I proposed an adaptive weight tuning method which can dynamically adjust the weight of each task’s loss during train.</p>
-:ET

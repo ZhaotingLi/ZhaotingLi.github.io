@@ -1,0 +1,7 @@
+I"­<ul>
+  <li>Implemented a contact detection algorithm that can estimate the contact locations and fores using the data from the joint torque sensors.</li>
+  <li>Extend the contact particle filter method to output multiple possible solutions, plan to generalize the state of art methods to multiple contact cases.</li>
+  <li>Implemement a contact-aware control framework for rigid contacts, and generalize this framework for contacts with unknown stiffness, includling both soft and rigid contacts.</li>
+  <li>Plan to propose high-level contact-aware planning in cluttered envrionments to find possible trajectories which may leads to necessary contacts with the environment.</li>
+</ul>
+:ET

@@ -8,7 +8,7 @@
     
     * Implemement a contact-aware control framework for rigid contacts, and generalize this framework for contacts with unknown stiffness, includling both soft and rigid contacts.
 
-    * Plan to propose high-level contact-aware planning in cluttered envrionments to find possible trajectories which may leads to contacts with the environment.
+    * Plan to propose high-level contact-aware planning in cluttered envrionments to find possible trajectories which may leads to necessary contacts with the environment.
 
   image: /img/contact-aware-control-demo.png
   abstract: >

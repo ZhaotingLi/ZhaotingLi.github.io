@@ -1,2 +1,0 @@
-I"Å<p>For cooperative muti-agent reinforcement learning problems, centralized training and decentralized execution algorithms are  proposed to utilize the global information during training and to extract margnial policies for execution. In this project, we want to find out and imporve the performance of such algorithm in a more realistic task: the multi-robot explorations where  the robots work as a term to explore an unknown map at minimum cost.</p>
-:ET
