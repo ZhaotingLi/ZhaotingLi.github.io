@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Zhaoting Li</title>
+  <title>{{ site.data.personal.name }}</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/zhaoting-li/assets/albertine/css/default.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/albertine/css/default.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,16 +35,16 @@
       <div class="row">
         <div class="col-xs-9 col-lg-9">
             <h1>
-                <a href="/zhaoting-li/">
-                Zhaoting Li
+                <a href="{{ site.baseurl}}/">
+                {{ site.data.personal.name }}
                 </a>
               </h1>
           <h2>
-            Master student at ETH Zurich
+            {{ site.data.personal.label }}
           </h2>
         </div>
         <div class="col-xs-3 col-lg-3">
-          <img src="/zhaoting-li/img/profile-picture.jpg" 
+          <img src="{{ site.baseurl }}{{ site.data.personal.picture }}" 
                class="img-circle"
                style="margin-top:-6px;width:56px;border:2px solid rgba(255,255,255,0.75)">
         </div>
@@ -56,44 +56,38 @@
   <!-- SECTION -->
   <!-- ==================== -->
   <body class="intro-screen">
-    
+    {% if site.data.publications.size > 0 %}
     <div class="container">
       <div class="row">
         <section class="col-md-9">
-          <h3></h3>
+          <h3>{{page.title}}</h3>
           
-          
+          {% if page.image %}
           <p>
-            <img src="/zhaoting-li/img/admittance_video_clips.png" 
+            <img src="{{ site.baseurl }}{{ page.image }}" 
                  class="img-responsive img-thumbnail"
                  style="width:200%">
           </p>
-          
+          {% endif %}
 
           <p> 
             <br> 
-                <h3 id="haptic-data-processing-in-human-robot-collaborative-carrying-task">Haptic data processing in Human-robot collaborative carrying task</h3>
-<p>Advisor: Andreea Tulbure, Dr. Firas Abi-Farraj , Robotic Systems Lab, ETH Zurich</p>
-
-<p>In the human-robot collaborative carrying task, it is important to infer human intention using the wrist force sensor. However,  the force readings are very noisy due to the trotting action of ANYMal and the vibration of the arm. The goal of this project is to extract useful information from the noisy data, which can then be used as the force feedback for an underlying control framework.  In this project, the possible solutions to this problem are analyzed. Especially, we propose a learning-based force filtering method which utilizes the filtered-and-amplified robot-side forces as the ground truth. We also design an efficient transformer-based neural network, which is trained under the typical supervised learning framework. 
-The experiment results show the promising performance of this method. Moreover, we show that by incorporating the learning-based force filtering, the collaborative admittance control framework becomes less rigid and much smoother during the real robot experiment.</p>
-
-
+                {{content}}
             <br>
           </p>
 
-          
+          {% if page.image2 %}
           <p>
-            <img src="/zhaoting-li/img/filtering_amplifying_robotf.png" 
+            <img src="{{ site.baseurl }}{{ page.image2 }}" 
                  class="img-responsive img-thumbnail"
                  style="width:100%">
           </p>
-          
+          {% endif %}
 
         </section>
       </div>
     </div>
-    
+    {% endif %}
   </body>
   
 </html>
