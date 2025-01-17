@@ -1,6 +1,6 @@
 -
   name: 'CARE: Contact Aware and Reactive Estimator for Contact-Rich Motion Planning'
-  time: 2022.10 - current
+  time: 2022.10 - 2023.06
   description: >
     * Implemented a contact detection algorithm that can estimate the contact locations and fores using the data from the joint torque sensors.   
     
@@ -12,7 +12,7 @@
 
   image: /img/contact-aware-control-demo.png
   abstract: >
-    *Ongoing*, MSc thesis in Computational Robotics Lab (CRL), ETHz 
+    MSc thesis in Computational Robotics Lab (CRL), ETHz 
   url:  research_crl_contact
 -
   name: 'Learning haptic data processing in Human Robot Collaborative Carrying Task'
