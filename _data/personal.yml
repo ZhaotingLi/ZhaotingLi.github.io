@@ -8,12 +8,12 @@ email: zhaoting_li@outlook.com
 
 phone: 
 
-department: D-MAVT
+department: Cognitive Robotics
 
-institution: ETH Zurich
+institution: TU Delft
 
 mailing_address: >
-  Switzerland
+  Netherlands
 
 profiles:
   - 
@@ -32,9 +32,7 @@ profiles:
 intro:
   title: Hello!
   body: >
-I am a second-year PhD candidate at the Department of Cognitive Robotics at TU Delft, where I work with [Prof. Jens Kober](http://www.jenskober.de/) and [Prof. Cosimo Della Santina](https://cosimodellasantina.eu/). My research focuses on robot learning, interactive imitation learning, and applying these techniques to real-world robotics problems, such as harvesting and performing everyday tasks.
-
-
+    I am a second-year PhD candidate at the Department of Cognitive Robotics at TU Delft, where I work with [Prof. Jens Kober](http://www.jenskober.de/) and [Prof. Cosimo Della Santina](https://cosimodellasantina.eu/). My research focuses on robot learning, interactive imitation learning, and applying these techniques to real-world robotics problems, such as harvesting and performing everyday tasks.
 
 
     
