@@ -12,75 +12,40 @@ An Elbowpatched theme
 Albertine owlet
 http://en.wikipedia.org/wiki/Albertine_owlet
 
-The Albertine owlet (Glaucidium albertinum) is a species of owl in the Strigidae family. 
-It is found in Democratic Republic of the Congo and Rwanda. 
-Its natural habitat is subtropical or tropical moist montane forests. 
+The Albertine owlet (Glaucidium albertinum) is a species of owl in the Strigidae family.
+It is found in Democratic Republic of the Congo and Rwanda.
+Its natural habitat is subtropical or tropical moist montane forests.
 It is threatened by habitat loss.
 
 -->
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{{ site.data.personal.name }}</title>
-  <meta name="description" content="{{ site.data.personal.name }} - {{ site.data.personal.label }}. Robot learning, interactive imitation learning, and manipulation.">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/albertine/css/default.css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-  <!-- Javascript -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+{% include head.html %}
 </head>
-<body class="intro-screen">
+<body>
+
+{% include header.html %}
 
   <!-- ==================== -->
-  <!-- HEADER -->
+  <!-- ABOUT -->
   <!-- ==================== -->
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-9 col-lg-9">
-          <h1>
-            <a href="{{ site.baseurl}}/">
-            {{ site.data.personal.name }}
-            </a>
-          </h1>
-          <h2>
-            {{ site.data.personal.label }}
-          </h2>
-        </div>
-        <div class="col-xs-3 col-lg-3">
-          <img src="{{ site.baseurl }}{{ site.data.personal.picture }}" 
-               class="img-circle"
-               style="margin-top:-6px;width:56px;border:2px solid rgba(255,255,255,0.75)">
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- ==================== -->
-  <!-- SECTION -->
-  <!-- ==================== -->
-  <div class="container"
-           id="section-about">
+  <div class="container" id="about">
     <div class="row">
-      <section class="col-md-8">
+      <section class="col-md-4 col-md-push-8 profile-card">
+        <img src="{{ site.baseurl }}{{ site.data.personal.picture }}"
+             alt="{{ site.data.personal.name }}"
+             class="profile-photo">
+        <div class="profile-name">{{ site.data.personal.name }}</div>
+        <div class="profile-affiliation">
+          {{ site.data.personal.label }}<br>
+          {{ site.data.personal.department }}, {{ site.data.personal.institution }}<br>
+          {{ site.data.personal.mailing_address | replace:'\n','<br>' }}
+        </div>
+      </section>
+      <section class="col-md-8 col-md-pull-4">
         {% if site.data.personal.intro.title %}
-          <h3 style="font-size:48px">
+          <h3 class="intro-title">
             {{ site.data.personal.intro.title }}
           </h3>
         {% else %}
@@ -93,36 +58,22 @@ It is threatened by habitat loss.
           {{ site.data.personal.intro.body | markdownify }}
         </div>
 
-      </section>
-      <section class="col-md-offset-1 col-md-3">
-        <h3>Contact</h3>
-        <p>
-          <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a>
-        </p>
-        <p>
-          {{ site.data.personal.department }}<br>
-          {{ site.data.personal.institution }}<br>
-          {{ site.data.personal.mailing_address | replace:'\n','<br>' }}
-        </p>
-
-        <p>
+        <p class="profile-links">
+          <a href="mailto:{{ site.data.personal.email }}">
+            <i class="fa fa-envelope"></i>{{ site.data.personal.email }}
+          </a>
           {% for profile in site.data.personal.profiles %}
-            
-            {% if profile.network == 'Google Scholar' %}
-              <i class="fa fa-google"></i>
-            {% elsif profile.network == 'LinkedIn' %}
-              <i class="fa fa-linkedin-square"></i>
-            {% elsif profile.network == 'Twitter' %}
-              <i class="fa fa-twitter-square"></i>
-            {% elsif profile.network == 'GitHub' %}
-              <i class="fa fa-github"></i>
-            {% endif %}
             <a href="{{ profile.url }}">
-              {{ profile.network }}
+              {% if profile.network == 'Google Scholar' %}
+                <i class="fa fa-graduation-cap"></i>
+              {% elsif profile.network == 'LinkedIn' %}
+                <i class="fa fa-linkedin-square"></i>
+              {% elsif profile.network == 'Twitter' %}
+                <i class="fa fa-twitter-square"></i>
+              {% elsif profile.network == 'GitHub' %}
+                <i class="fa fa-github"></i>
+              {% endif %}{{ profile.network }}
             </a>
-            {% if forloop.last == false %}
-              <br>
-            {% endif %}
           {% endfor %}
         </p>
       </section>
@@ -130,65 +81,64 @@ It is threatened by habitat loss.
   </div>
 
   {% if site.data.publications.size > 0 %}
+  <!-- ==================== -->
+  <!-- PUBLICATIONS & EXPERIENCES -->
+  <!-- ==================== -->
   <div class="container">
     <div class="row">
-      <section class="col-md-8">
+      <section class="col-md-8" id="publications">
         <h3>Selected Publications</h3>
+        {% for profile in site.data.personal.profiles %}
+          {% if profile.network == 'Google Scholar' %}
+            <p class="pub-note">
+              Full list on <a href="{{ profile.url }}">Google Scholar</a>
+            </p>
+          {% endif %}
+        {% endfor %}
 
         {% for publication in site.data.publications %}
-          <p>
-            <b>
-              <a href="{{ publication.pdf }}">
-                {{ publication.title }}
-              </a>
-            </b>
-            <small>
-              {{ publication.year }}
-            </small>
-            <br>
-            {{ publication.authors | replace:'Zhaoting Li', "<b>Zhaoting Li</b>"}}
-            <br>
-            <i>
+          <div class="publication">
+            <a class="pub-title" href="{{ publication.pdf }}">
+              {{ publication.title }}
+            </a>
+            <div class="pub-authors">
+              {{ publication.authors | replace:'Zhaoting Li', "<b>Zhaoting Li</b>"}}
+            </div>
+            <div class="pub-venue">
             {% case publication.type %}
               {% when 'conference' %}
-                {{ publication.conference }}
+                {{ publication.conference }}, {{ publication.year }}
               {% when 'preprint' %}
-                {{ publication.venue }}
+                {{ publication.venue }}, {{ publication.year }}
               {% when 'dissertation' %}
-                {{ publication.publisher }}
+                {{ publication.publisher }}, {{ publication.year }}
               {% when 'journal' %}
-                {{ publication.journal }}{% if publication.volume %}, {{ publication.volume }}{% if publication.issue %}({{ publication.issue }}){% endif %}{% endif %}{% if publication.pages %}, {{ publication.pages }}{% endif %}
+                {{ publication.journal }}{% if publication.volume %}, {{ publication.volume }}{% if publication.issue %}({{ publication.issue }}){% endif %}{% endif %}{% if publication.pages %}, {{ publication.pages }}{% endif %}, {{ publication.year }}
               {% when 'magazine' %}
-                {{ publication.magazine }}{% if publication.volume %}, {{ publication.volume }}{% if publication.issue %}({{ publication.issue }}){% endif %}{% endif %}{% if publication.pages %}, {{ publication.pages }}{% endif %}
+                {{ publication.magazine }}{% if publication.volume %}, {{ publication.volume }}{% if publication.issue %}({{ publication.issue }}){% endif %}{% endif %}{% if publication.pages %}, {{ publication.pages }}{% endif %}, {{ publication.year }}
             {% endcase %}
-            </i>
+            </div>
             {% if publication.links %}
-              <br>
-              <span class="pub-links">
+              <div class="pub-links">
                 {% for link in publication.links %}
-                  <a href="{{ link.url }}">[{{ link.name }}]</a>
+                  <a href="{{ link.url }}">{{ link.name }}</a>
                 {% endfor %}
-              </span>
+              </div>
             {% endif %}
-          </p>
+          </div>
         {% endfor %}
       </section>
-      <section class="col-md-offset-1 col-md-3">
+      <section class="col-md-offset-1 col-md-3" id="experiences">
         <h3>Experiences</h3>
-        {% for experience in site.data.experiences %}
-          <p>
-            <b>
-              {{experience.title}}
-            </b>
-            <br>
-            {{experience.place}}
-            <br>
-            {{experience.time}}
-            
-            
-          </p>
-
-        {% endfor %}
+        <div class="timeline">
+          {% for experience in site.data.experiences %}
+            <div class="timeline-item">
+              <div class="timeline-title">{{ experience.title }}</div>
+              <div class="timeline-place">{{ experience.place }}</div>
+              <div class="timeline-time">{{ experience.time }}</div>
+            </div>
+          {% endfor %}
+        </div>
       </section>
     </div>
   </div>
@@ -198,7 +148,7 @@ It is threatened by habitat loss.
   <!-- ==================== -->
   <!-- PROJECTS -->
   <!-- ==================== -->
-  <section class="container">
+  <section class="container" id="projects">
     <div class="row">
       <div class="col-md-9">
         <h3>Projects</h3>
@@ -206,38 +156,37 @@ It is threatened by habitat loss.
     </div>
 
     {% for project in site.data.projects %}
+      <div class="project">
       <div class="row">
-        <div class="col-xs-4
-                    col-sm-3
-                    col-md-3
-                    col-lg-4">
-          <p>
-            <img src="{{ site.baseurl }}{{ project.image }}" 
-                 class="img-responsive img-thumbnail"
-                 style="width:200%">
-          </p>
+        <div class="col-sm-4 project-media">
+          {% if project.video %}
+            <video src="{{ site.baseurl }}{{ project.video }}"
+                   class="autoplay-in-view"
+                   autoplay muted loop playsinline preload="metadata"></video>
+          {% else %}
+            <img src="{{ site.baseurl }}{{ project.image }}"
+                 alt="{{ project.name }}">
+          {% endif %}
         </div>
-        <div class="col-xs-12
-                    col-sm-9
-                    col-md-6
-                    col-lg-7">
-          <p>
-            <b>
-              {% if project.url %}
-                <a href="{{ project.url }}">
-                  {{ project.name }}
-                </a>
-              {% else %}
+        <div class="col-sm-8">
+          <div class="project-title">
+            {% if project.url %}
+              <a href="{{ project.url }}">
                 {{ project.name }}
-              {% endif %}
-            </b>
-            <small>
-              {{ project.time }}
-            </small>
-          </p>
-          {{ project.abstract | markdownify }}
+              </a>
+            {% else %}
+              {{ project.name }}
+            {% endif %}
+          </div>
+          {% if project.time %}
+            <div class="project-time">{{ project.time }}</div>
+          {% endif %}
+          <div class="project-abstract">
+            {{ project.abstract | markdownify }}
+          </div>
           {{ project.description | markdownify }}
         </div>
+      </div>
       </div>
     {% endfor %}
   </section>
@@ -284,38 +233,46 @@ It is threatened by habitat loss.
   <!-- ==================== -->
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <hr>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">          
-          <img src="{{ site.baseurl }}/img/elbowpatched-icon.svg" alt="Elbowpatched"
-               style="float:left;margin-right:5px;width:20px;height:20px;">
-          Powered by 
-          <a href="http://www.elbowpatched.com">
-            Elbowpatched
-          </a>
-        </div>
-      </div>
+      &copy; {{ site.time | date: '%Y' }} {{ site.data.personal.name }}
+      &middot; Last updated {{ site.time | date: '%B %Y' }}
+      &middot; Theme based on <a href="http://www.elbowpatched.com">Elbowpatched</a>
     </div>
   </footer>
 
   <!-- ==================== -->
   <!-- JAVASCRIPTS -->
   <!-- ==================== -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $('#section-about').waypoint(function (direction) {
-        if (direction === 'down') {
-          $('body').removeClass('intro-screen');
-        } else {
-          $('body').addClass('intro-screen');
-        }
+    // Play project videos only while they are on screen; respect reduced-motion preferences.
+    (function () {
+      var videos = Array.prototype.slice.call(document.querySelectorAll('video.autoplay-in-view'));
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        videos.forEach(function (video) {
+          video.removeAttribute('autoplay');
+          video.pause();
+          video.controls = true;
+        });
+        return;
+      }
+      if (!('IntersectionObserver' in window)) {
+        return;
+      }
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var playing = entry.target.play();
+            if (playing && playing.catch) {
+              playing.catch(function () {});
+            }
+          } else {
+            entry.target.pause();
+          }
+        });
+      }, { threshold: 0.25 });
+      videos.forEach(function (video) {
+        observer.observe(video);
       });
-    });
+    })();
   </script>
 </body>
 </html>

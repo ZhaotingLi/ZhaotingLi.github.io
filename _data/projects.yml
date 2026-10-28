@@ -9,6 +9,7 @@
     * Outperformed standard Diffusion Policy on real-robot Insert-T and round-table assembly tasks, with the largest gains on harder initial states and better robustness to noisy data.
 
   image: /img/sdp_overview.jpg
+  video: /video/sdp_roundtable.mp4
   abstract: >
     PhD research at TU Delft, published at RSS 2026 [[paper](https://www.roboticsproceedings.org/rss22/p080.pdf)] [[code](https://github.com/ZhaotingLi/Set_Supervised_DP)]
   url: https://set-supervised-diffusion-policy.github.io/
@@ -23,6 +24,7 @@
     * Demonstrated in simulation and real-robot experiments (Insert-T, water pouring) that CLIC is competitive with state-of-the-art methods on accurate data and substantially more robust to noisy, relative, and partial feedback.
 
   image: /img/clic_overview.jpg
+  video: /video/clic_converge.mp4
   abstract: >
     PhD research at TU Delft [[arXiv](https://arxiv.org/abs/2502.07645)] [[code](https://github.com/clic-webpage/CLIC)]
   url: https://clic-webpage.github.io/
@@ -39,6 +41,7 @@
     * Extended the BiTRRT sampling-based planner to be contact-aware, and validated the framework on a Franka robot in a setup inspired by the Amazon stowing task.
 
   image: /img/contact-aware-control-demo.png
+  video: /video/care_contact.mp4
   abstract: >
     MSc thesis in Computational Robotics Lab (CRL), ETH Zurich; RSS 2023 workshop paper [[paper](https://arxiv.org/abs/2308.04323)] [[video](https://youtu.be/2WeYytauhNg)]
   url:  research_crl_contact
