@@ -68,6 +68,9 @@ section {
   section a:hover {
     color:#44a9eb;
   }
+  section .pub-links {
+    font-size:14px;
+  }
 
 /*******************
  * INTRO SCREEN

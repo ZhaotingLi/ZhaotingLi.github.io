@@ -38,4 +38,8 @@ To solve this problem, we propose an optimization-based framework, which can han
 
 ## 3. Contact-aware planning
 
-This section is still under research. 
+To find trajectories that make only safe contacts with the environment, we extend the BiTRRT sampling-based planner to be contact-aware, using a simplified contact model.
+Together with the contact-aware controller, the framework is validated in hardware experiments with a Franka robot in a setup inspired by the Amazon stowing task.
+This work was presented at the RSS 2023 Workshop on Experiment-oriented Locomotion and Manipulation Research [[paper](https://arxiv.org/abs/2308.04323)].
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2WeYytauhNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

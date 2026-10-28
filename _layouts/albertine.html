@@ -26,6 +26,7 @@ It is threatened by habitat loss.
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{{ site.data.personal.name }}</title>
+  <meta name="description" content="{{ site.data.personal.name }} - {{ site.data.personal.label }}. Robot learning, interactive imitation learning, and manipulation.">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
@@ -91,12 +92,12 @@ It is threatened by habitat loss.
         <div class="lead">
           {{ site.data.personal.intro.body | markdownify }}
         </div>
-        
+
       </section>
       <section class="col-md-offset-1 col-md-3">
         <h3>Contact</h3>
         <p>
-          {{ site.data.personal.email}}
+          <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a>
         </p>
         <p>
           {{ site.data.personal.department }}<br>
@@ -113,6 +114,8 @@ It is threatened by habitat loss.
               <i class="fa fa-linkedin-square"></i>
             {% elsif profile.network == 'Twitter' %}
               <i class="fa fa-twitter-square"></i>
+            {% elsif profile.network == 'GitHub' %}
+              <i class="fa fa-github"></i>
             {% endif %}
             <a href="{{ profile.url }}">
               {{ profile.network }}
@@ -130,7 +133,7 @@ It is threatened by habitat loss.
   <div class="container">
     <div class="row">
       <section class="col-md-8">
-        <h3>Publications</h3>
+        <h3>Selected Publications</h3>
 
         {% for publication in site.data.publications %}
           <p>
@@ -143,24 +146,30 @@ It is threatened by habitat loss.
               {{ publication.year }}
             </small>
             <br>
-            {{ publication.authors | replace:'Zhaoting Li', "<b>Zhaoting Li </b>"}}
+            {{ publication.authors | replace:'Zhaoting Li', "<b>Zhaoting Li</b>"}}
             <br>
+            <i>
             {% case publication.type %}
               {% when 'conference' %}
                 {{ publication.conference }}
+              {% when 'preprint' %}
+                {{ publication.venue }}
               {% when 'dissertation' %}
                 {{ publication.publisher }}
               {% when 'journal' %}
-                {{ publication.journal }},
-                {{ publication.volume }},
-                {{ publication.issue }},
-                {{ publication.pages }}
+                {{ publication.journal }}{% if publication.volume %}, {{ publication.volume }}{% if publication.issue %}({{ publication.issue }}){% endif %}{% endif %}{% if publication.pages %}, {{ publication.pages }}{% endif %}
               {% when 'magazine' %}
-                {{ publication.magazine }},
-                {{ publication.volume }},
-                {{ publication.issue }},
-                {{ publication.pages }}
+                {{ publication.magazine }}{% if publication.volume %}, {{ publication.volume }}{% if publication.issue %}({{ publication.issue }}){% endif %}{% endif %}{% if publication.pages %}, {{ publication.pages }}{% endif %}
             {% endcase %}
+            </i>
+            {% if publication.links %}
+              <br>
+              <span class="pub-links">
+                {% for link in publication.links %}
+                  <a href="{{ link.url }}">[{{ link.name }}]</a>
+                {% endfor %}
+              </span>
+            {% endif %}
           </p>
         {% endfor %}
       </section>

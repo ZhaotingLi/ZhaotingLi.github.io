@@ -1,71 +1,99 @@
 -
+  name: 'Set-Supervised Diffusion Policy: Learning Action-Chunking Diffusion through Corrections'
+  time:
+  description: >
+    * Proposed Set-Supervised Diffusion Policy (SDP), which trains action-chunking diffusion policies from human corrections by pairing the robot's undesired action-chunks with the human's corrective action-chunks.
+
+    * Used these pairs to construct sets of desired action-chunks and trained the diffusion policy to imitate samples from these sets, instead of only imitating positive actions.
+
+    * Outperformed standard Diffusion Policy on real-robot Insert-T and round-table assembly tasks, with the largest gains on harder initial states and better robustness to noisy data.
+
+  image: /img/sdp_overview.jpg
+  abstract: >
+    PhD research at TU Delft, published at RSS 2026 [[paper](https://www.roboticsproceedings.org/rss22/p080.pdf)] [[code](https://github.com/ZhaotingLi/Set_Supervised_DP)]
+  url: https://set-supervised-diffusion-policy.github.io/
+-
+  name: 'CLIC: Contrastive Policy Learning from Interactive Corrections'
+  time:
+  description: >
+    * Showed that behavior cloning, which treats each human action as an exact label, is brittle when the labels are imperfect, especially for expressive models such as energy-based models.
+
+    * Proposed CLIC, which uses human corrections to build and refine sets of desired actions and trains the policy to place probability mass over these sets, supporting both absolute and relative corrections and multi-modal behaviors.
+
+    * Demonstrated in simulation and real-robot experiments (Insert-T, water pouring) that CLIC is competitive with state-of-the-art methods on accurate data and substantially more robust to noisy, relative, and partial feedback.
+
+  image: /img/clic_overview.jpg
+  abstract: >
+    PhD research at TU Delft [[arXiv](https://arxiv.org/abs/2502.07645)] [[code](https://github.com/clic-webpage/CLIC)]
+  url: https://clic-webpage.github.io/
+-
   name: 'CARE: Contact Aware and Reactive Estimator for Contact-Rich Motion Planning'
   time: 2022.10 - 2023.06
   description: >
-    * Implemented a contact detection algorithm that can estimate the contact locations and fores using the data from the joint torque sensors.   
-    
-    * Extend the contact particle filter method to output multiple possible solutions, plan to generalize the state of art methods to multiple contact cases.    
-    
-    * Implemement a contact-aware control framework for rigid contacts, and generalize this framework for contacts with unknown stiffness, includling both soft and rigid contacts.
+    * Implemented a contact detection algorithm that estimates contact locations and forces from joint torque sensor data.
 
-    * Plan to propose high-level contact-aware planning in cluttered envrionments to find possible trajectories which may leads to necessary contacts with the environment.
+    * Extended the contact particle filter method to output multiple possible solutions, generalizing the state-of-the-art method to multiple-contact cases.
+
+    * Implemented a contact-aware control framework that keeps interaction forces over the robot's whole surface below a safety threshold, for both soft and rigid contacts.
+
+    * Extended the BiTRRT sampling-based planner to be contact-aware, and validated the framework on a Franka robot in a setup inspired by the Amazon stowing task.
 
   image: /img/contact-aware-control-demo.png
   abstract: >
-    MSc thesis in Computational Robotics Lab (CRL), ETHz 
+    MSc thesis in Computational Robotics Lab (CRL), ETH Zurich; RSS 2023 workshop paper [[paper](https://arxiv.org/abs/2308.04323)] [[video](https://youtu.be/2WeYytauhNg)]
   url:  research_crl_contact
 -
   name: 'Learning haptic data processing in Human Robot Collaborative Carrying Task'
   time: 2022.03 - 2022.08
   description: >
-    * Proposed a learning-based force filtering method that utilizes the filtered-and-amplified robot-side forces as the ground truth, to reduce the noise introduced by the trotting action.
-    
-    * Designed an efficient transformer-based neural network,collected data during the collaboration between humans and ANYMal with an arm, and trained the network in the typical supervised learning framework.
-    
+    * Proposed a learning-based force filtering method that uses the filtered-and-amplified robot-side forces as the ground truth, to reduce the noise introduced by the trotting action.
+
+    * Designed an efficient transformer-based neural network, collected data during collaboration between humans and ANYmal with an arm, and trained the network in a supervised learning framework.
+
     * Tested the effectiveness of the proposed force filtering method with the admittance control framework.
 
   image: /img/rsl_HRCC_overview.png
   abstract: >
-     semester project in Robotic System Lab (RSL), ETHz [[Report](https://drive.google.com/file/d/169OLYRjhD3g-8cr3lPWS1mzWGUkF9fjj/view?usp=sharing)]
+     Semester project in Robotic Systems Lab (RSL), ETH Zurich [[Report](https://drive.google.com/file/d/169OLYRjhD3g-8cr3lPWS1mzWGUkF9fjj/view?usp=sharing)]
   url:  research_rsl_human_robot_HRCC
 -
-  name: 'Learning Muti-Robot Exploration Strategy with Adaptive-QMIX algorithm'
+  name: 'Learning Multi-Robot Exploration Strategy with Adaptive-QMIX algorithm'
   time: 2021.10 - 2022.02
   description: >
-    * Developed the simulation environment for muti-robot exploration.
-    
-    * Proposed the adaptive-QMIX method which can be adaptive to various total robot number.
-    
-    * Applied the proposed algorithm to muti-robot exploration problem.
+    * Developed the simulation environment for multi-robot exploration.
+
+    * Proposed the adaptive-QMIX method, which adapts to a varying total number of robots.
+
+    * Applied the proposed algorithm to the multi-robot exploration problem.
 
   image: /img/muti-expo.png
   abstract: >
-     based on the robot exploration project 
+     Based on the robot exploration project
   url: research_muti_robot_exploratiion
 -
-  name: 'Deep Learning for Autonomous Driving: muti-tasking learning and 3D object detection'
-  time: 2022.04-2022.07
+  name: 'Deep Learning for Autonomous Driving: Multi-task learning and 3D object detection'
+  time: 2022.04 - 2022.07
   description: >
-    * Trained neural neworks based on three types of muti-task learning framework, compared the effects of different hyperparameters
+    * Trained neural networks based on three types of multi-task learning frameworks, and compared the effects of different hyperparameters
     and structures.
-    
-    * Proposed an adaptive weight tuning method which can dynamically adjust the weight of each task's loss during training.
 
-    * Trained the baseline proposal refining network, and proposed several methods to improve its performance.
+    * Proposed an adaptive weight tuning method that dynamically adjusts the weight of each task's loss during training.
+
+    * Trained the baseline proposal refinement network, and proposed several methods to improve its performance.
 
   image: /img/DLAD_overview.png
   abstract: >
-    Course project of Deep learning for autonomous driving
+    Course project of Deep Learning for Autonomous Driving, ETH Zurich
   url: research_DLAD
 -
   name: 'Learning Robot Exploration Strategy with Deep Reinforcement Learning'
-  time: 2020.10-2021.07
+  time: 2020.10 - 2021.07
   description: >
     * Proposed 4D point-clouds-like information, which consists of 2D points’ location information, and the corresponding 1D frontier and 1D distance information.
-    
+
     * Designed the corresponding training framework based on the deep Q-Learning method and modified it to adapt to the variable action space.
-    
-    * Demonstrated the performance of the proposed method on a wide variety of environments, which the model has not seen before, and includes maps whose size is much larger than maps in the training set.
+
+    * Demonstrated the performance of the proposed method on a wide variety of unseen environments, including maps much larger than those in the training set.
 
 
   image: /img/MDP_framework.png
@@ -75,13 +103,13 @@
 
 -
   name: 'Efficient Heuristic Generation for Robot Path Planning'
-  time: 2020.07-2020.10
+  time: 2020.07 - 2020.10
   description: >
-    * Designed a novel recurrent generative model to generate efficient heuristic for robot path planning.
+    * Designed a novel recurrent generative model to generate efficient heuristics for robot path planning.
 
     * Incrementally constructed the heuristic through the feedback of historical information.
 
-    * Combinedthe generated heuristic with RRT* algorithm to guide the algorithm to find both initial and optimal solutions in a faster and more efficient way.
+    * Combined the generated heuristic with the RRT* algorithm to guide it to find both initial and optimal solutions faster and more efficiently.
 
 
   image: /img/exp_rrtstar.png
@@ -90,29 +118,29 @@
   url: research_gan_heuristic
 -
   name: 'A sampling-based motion planning method for urban autonomous vehicles'
-  time: 2019.07-2020.01
+  time: 2019.07 - 2020.01
   description: >
-    * Applied the discrete elastic-band-based motion planning method(EB planner)to generate piecewise linear collision-free path with dynamic programming.
-    
-    * Employed pure pursuit controller to smooth this path.•Used a spatial and speed sampling methodtogether with acascaded ranking method to optimize the trajectory with many hierarchical features.
-    
+    * Applied the discrete elastic-band-based motion planning method (EB planner) to generate a piecewise-linear collision-free path with dynamic programming.
+
+    * Employed a pure pursuit controller to smooth this path, and used a spatial and speed sampling method together with a cascaded ranking method to optimize the trajectory with many hierarchical features.
+
     * Applied a non-conservatively defensive strategy to avoid overreacting to threats with low probability.
-    
-    * Adaptively adjust sampling resolution based on the environment and the objectives of the ego vehicle.
+
+    * Adaptively adjusted the sampling resolution based on the environment and the objectives of the ego vehicle.
 
   image: /img/road_figure.jpg
   abstract: >
     Research work at UC Berkeley, published at IFAC 2020 [[paper](https://www.sciencedirect.com/science/article/pii/S2405896320332237)].
   url: research_IFAC
 -
-  name: 'A trajectory planning method for robot scanning sytem for scanning objects with unknown model'
-  time: 2019.02-2019.06
+  name: 'A trajectory planning method for robot scanning system for scanning objects with unknown model'
+  time: 2019.02 - 2019.06
   description: >
-    * Designed an automatic and low-cost robot scanning system consisting of a kinect camera, a UR 10 robot and a line laser scanner. Also calibrated the coordinate systems.
-    
-    * Proposed an online correction methods based on follow-up control and scanned data to optimize the pose of the laser scanner. 
-    
-    * Proposed a novel path planning methods for laser scanning based on the least square fitting and online correction. This path planning method has been validated in many use cases under various work conditions.
+    * Designed an automatic and low-cost robot scanning system consisting of a Kinect camera, a UR10 robot and a line laser scanner, and calibrated the coordinate systems.
+
+    * Proposed an online correction method based on follow-up control and scanned data to optimize the pose of the laser scanner.
+
+    * Proposed a novel path planning method for laser scanning based on least-squares fitting and online correction, validated in many use cases under various working conditions.
 
 
   image: /img/laser_scanning_system.png

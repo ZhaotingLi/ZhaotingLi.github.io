@@ -1,12 +1,12 @@
 name: Zhaoting Li
 
-label:  PhD Candidate at TU Delft
+label:  PhD Candidate in Robot Learning at TU Delft
 
 picture: /img/profile-picture.jpg
 
 email: zhaoting_li@outlook.com
 
-phone: 
+phone:
 
 department: Cognitive Robotics
 
@@ -16,23 +16,20 @@ mailing_address: >
   Netherlands
 
 profiles:
-  - 
+  -
     network: Google Scholar
     username:
     url: https://scholar.google.com/citations?user=KAVUl24AAAAJ&hl=en
   -
-  #   network: LinkedIn
-  #   username:
-  #   url: https://www.linkedin.com/pub/ian-li/1/681/8b0
-  # -
-    network: Github
-    username: lzt-98
-    url: https://github.com/lzt-98
+    network: LinkedIn
+    username:
+    url: https://www.linkedin.com/in/zhaoting-li-73813723b/
+  -
+    network: GitHub
+    username: ZhaotingLi
+    url: https://github.com/ZhaotingLi
 
 intro:
   title: Hello!
   body: >
-    I am a second-year PhD candidate at the Department of Cognitive Robotics at TU Delft, where I work with [Prof. Jens Kober](http://www.jenskober.de/) and [Prof. Cosimo Della Santina](https://cosimodellasantina.eu/). My research focuses on robot learning, interactive imitation learning, and applying these techniques to real-world robotics problems, such as harvesting and performing everyday tasks.
-
-
-    
+    I am a PhD candidate at the Department of Cognitive Robotics at TU Delft, where I work with [Prof. Jens Kober](http://www.jenskober.de/) and [Prof. Cosimo Della Santina](https://cosimodellasantina.eu/). My research focuses on robot learning, interactive imitation learning, and applying these techniques to real-world robotics problems, such as harvesting and performing everyday tasks.
